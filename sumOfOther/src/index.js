@@ -1,10 +1,10 @@
 module.exports = function sumOfOthers(arr) {
-  function sum(){
+  function sum() {
     return arr.reduce((a, b) => a + b, 0);
-  };
+  }
 
   const sumOther = [];
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i += 1) {
     sumOther[i] = sum(sumOfOthers) - arr[i];
   }
   return sumOfOthers;
